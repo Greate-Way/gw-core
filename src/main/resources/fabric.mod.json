@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "gw-core",
+  "version": "${version}",
+  "name": "gw-core",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "Apache License 2.0",
+  "icon": "assets/gw-core/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.diberv.gwCore.client.GwCoreClient"
+    ],
+    "main": [
+      "dev.diberv.gwCore.GwCore"
+    ]
+  },
+  "mixins": [
+    "gw-core.mixins.json",
+    {
+      "config": "gw-core.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
