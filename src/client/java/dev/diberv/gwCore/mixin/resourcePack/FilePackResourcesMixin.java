@@ -14,7 +14,7 @@ public class FilePackResourcesMixin {
             method = "<init>",
             at = @At("HEAD"),
             argsOnly = true,
-            index = 1
+            index = 2
     )
     private static FilePackResources.SharedZipFileAccess modifyzipFileAccess(FilePackResources.SharedZipFileAccess zipFileAccess) {
 
