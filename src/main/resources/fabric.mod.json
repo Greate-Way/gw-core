@@ -24,6 +24,9 @@
       "environment": "client"
     }
   ],
+
+  "accessWidener": "gw-core.classtweaker",
+
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",

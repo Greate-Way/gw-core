@@ -1,0 +1,5 @@
+classTweaker v2 official
+
+#ресурспаки
+accessible class net/minecraft/server/packs/FilePackResources$SharedZipFileAccess #вложенный класс публичный
+accessible method net/minecraft/server/packs/FilePackResources$SharedZipFileAccess <init> (Ljava/io/File;)V #ну его конструктор

@@ -4,7 +4,9 @@
   "package": "dev.diberv.gwCore.mixin",
   "compatibilityLevel": "JAVA_25",
   "client": [
-    "PlayerTabOverlayMixin"
+    "PlayerTabOverlayMixin",
+    "resourcePack.FilePackResourcesMixin",
+    "resourcePack.FilePackResourcesMixin"
   ],
   "injectors": {
     "defaultRequire": 1
