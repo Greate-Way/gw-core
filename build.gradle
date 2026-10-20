@@ -20,27 +20,18 @@ loom {
 }
 
 repositories {
-    exclusiveContent {
-        forRepository {
-            maven {
-                name = "Modrinth"
-                url = "https://api.modrinth.com/maven"
-            }
-        }
-
-        filter {
-            includeGroup "maven.modrinth"
-        }
-    }
 }
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-    implementation "maven.modrinth:YL57xq9U:oaD6KQls"
 
-    include "maven.modrinth:YL57xq9U:oaD6KQls" //вложит ебанный ирис в мод
+    implementation files("libs/iris-fabric-1.11.4+mc26.2.jar")
+    include(files("libs/iris-fabric-1.11.4+mc26.2.jar"))
+
+    implementation files("libs/sodium-fabric-0.9.2+mc26.2.jar")
+    include(files("libs/sodium-fabric-0.9.2+mc26.2.jar"))
 }
 
 processResources {

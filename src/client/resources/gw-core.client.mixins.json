@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_25",
   "client": [
     "PlayerTabOverlayMixin",
+    "EntityHitboxDebugRendererMixin",
     "resourcePack.FilePackResourcesMixin",
     "resourcePack.FilePackResourcesMixin"
   ],
