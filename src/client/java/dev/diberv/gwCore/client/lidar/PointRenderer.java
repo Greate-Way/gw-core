@@ -55,12 +55,14 @@ public class PointRenderer {
 
             Matrix4fc matrix = matrices.last().pose();
 
-            renderPoint(
-                    matrix, buffer,
-                    100.5f, 70.5f, 200.5f,
-                    0.05f,
-                    1f, 0f, 0f, 1f
-            );
+            PointManager.getPoints().forEach(point -> {
+                renderPoint(
+                        matrix, buffer,
+                        point.x, point.y, point.z,
+                        0.05f,
+                        point.r, point.g, point.b, 1f
+                );
+            });
 
             stagedBuffer.upload();
 
